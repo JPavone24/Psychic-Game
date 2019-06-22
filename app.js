@@ -79,7 +79,9 @@ document.onkeydown = function(event) {
     // If there is then we win and we'll update the HTML to display the win.
     wins++;
     document.querySelector("#wins").innerHTML = wins;
-    document.querySelector("#guess").innerHTML = "Congratulations, you are psychic";
+    letter = "you are psychic"
+    document.querySelector("#guessedLetter").innerHTML = letter;
+
     ;
 
     // Then we'll reset the game
@@ -92,8 +94,10 @@ document.onkeydown = function(event) {
     // Then we will loss and we'll update the HTML to display the loss.
     losses++;
     document.querySelector("#losses").innerHTML = losses;
-    document.querySelector("#guess").innerHTML = "Sorry, you are not Psychic";
-    document.querySelector("#guessedLetter").innerHTML = "You are Psychic!";
+    letter = "you aren't psychic!"
+    document.querySelector("#guessedLetter").innerHTML = letter;
+
+
 
     // Then we'll call the reset.
     reset();
